@@ -65,11 +65,24 @@ class array:
     
     print(f'the duplicates elements are ', duplicates)
   # using list  repeating_____
+  
+  def sortingAlgo(self):
+    
+    array = self.array
+
+    for idx in range(len(array) - 1):
+      for jdx in range(len(array) - 1 - idx):
+        if array[jdx] > array[jdx + 1]:
+          array[jdx], array[jdx + 1] = array[jdx + 1], array[jdx]
+      
+    print('the sorted array is :', *array, sep = ' ') 
+    # its applicable for every sorting questions.....
 
 if __name__ == '__main__':
 
   Obj = array()
-  
+
+  Obj.sortingAlgo()
   Obj.searchTarget()
   Obj.missingNumber()
   Obj.repeatingNumberDict()
