@@ -2,6 +2,9 @@ class array:
 
   array = [26, 22, 13, 25, 29, 5, 6, 1, 17, 9, 11, 23, 16 , 15, 11, 9, 4, 26, 6, 5, 9, 21]
   missing_number_array = [1, 5, 3, 7, 6, 2, 8, 7]
+  a = [3, 4, 2, 5, 1]
+  b = [5, 3, 1, 4, 2]
+
   target = int(input('enter your target value:\t'))
 
   def largestElement(self):
@@ -77,6 +80,14 @@ class array:
       
     print('the sorted array is :', *array, sep = ' ') 
     # its applicable for every sorting questions.....
+
+  def arrayCheck(self):
+
+    array = self.a
+    check = self.b
+
+    if sorted(array) == sorted(check):  print('this matches')
+    else:                               print('not matched')
 
 if __name__ == '__main__':
 
