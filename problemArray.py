@@ -1,6 +1,6 @@
 class array:
 
-  array = [26, 22, 13, 25, 29, 5, 6, 1, 17, 9, 11, 23, 16 , 15]
+  array = [26, 22, 13, 25, 29, 5, 6, 1, 17, 9, 11, 23, 16 , 15, 11, 9, 4, 26, 6, 5, 9, 21]
   missing_number_array = [1, 5, 3, 7, 6, 2, 8, 7]
   target = int(input('enter your target value:\t'))
 
@@ -49,6 +49,20 @@ class array:
       if idx not in array_:
         print(f'the missing number is : ', idx)
 
+  def repeatingNumber(self):
+
+    array = self.array
+    dictionary = {}
+    duplicates = []
+    for idx in array:
+      if idx not in dictionary:   dictionary[idx] = 1 
+      else:                       dictionary[idx] += 1
+    
+    for values in dictionary:
+      if dictionary[values] > 1:
+        duplicates.append(values)
+    
+    print(f'the duplicates elements are ', duplicates)
 
 if __name__ == '__main__':
 
@@ -56,6 +70,7 @@ if __name__ == '__main__':
   
   Obj.searchTarget()
   Obj.missingNumber()
+  Obj.repeatingNumber()
   Obj.largestElement()
   Obj.smallestElement()
   Obj.largestElementAlgo()
