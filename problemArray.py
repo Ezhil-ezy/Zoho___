@@ -69,7 +69,7 @@ class array:
   def sortingAlgo(self):
     
     array = self.array
-
+    # bubble_sort_____
     for idx in range(len(array) - 1):
       for jdx in range(len(array) - 1 - idx):
         if array[jdx] > array[jdx + 1]:
