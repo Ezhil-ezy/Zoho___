@@ -99,9 +99,14 @@ class array:
   def rotateArraySlice(self):
 
     array = self.array
-    print('rotating by one ', array[-1:] + array[:-2])
+    k = self.target
+    print('rotating by k ', array[k:] + array[:k])
+    print('rotating by one ', array[-1:] + array[:-1])
+
+    
 
 
+#---------------------------------------------------------------------->
 if __name__ == '__main__':
 
   Obj = array()
