@@ -88,12 +88,27 @@ class array:
 
     if sorted(array) == sorted(check):  print('this matches')
     else:                               print('not matched')
+  
+  def rotateArrayPop(self):
+
+    array = self.array
+    last  = array.pop()
+
+    print('rotating by one ', [last] + array)
+
+  def rotateArraySlice(self):
+
+    array = self.array
+    print('rotating by one ', array[-1:] + array[:-2])
+
 
 if __name__ == '__main__':
 
   Obj = array()
 
   Obj.arrayCheck()
+  Obj.rotateArrayPop()
+  Obj.rotateArraySlice()
   Obj.sortingAlgo()
   Obj.searchTarget()
   Obj.missingNumber()
