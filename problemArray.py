@@ -93,6 +93,7 @@ if __name__ == '__main__':
 
   Obj = array()
 
+  Obj.arrayCheck()
   Obj.sortingAlgo()
   Obj.searchTarget()
   Obj.missingNumber()
