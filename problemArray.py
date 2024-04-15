@@ -1,6 +1,7 @@
 class array:
 
   array = [26, 22, 13, 25, 29, 5, 6, 1, 17, 9, 11, 23, 16 , 15]
+  missing_number_array = [1, 5, 3, 7, 6, 2, 8, 7]
   target = int(input('enter your target value:\t'))
 
   def largestElement(self):
@@ -38,13 +39,23 @@ class array:
           print(f'the element present in the place of :', idx)
 
     else: print(f'the element {k} which is not present in an array')
-    
+
+  def missingNumber(self):
+
+    array_ = self.missing_number_array
+    maximum = max(array_)
+        
+    for idx in range(1, maximum):
+      if idx not in array_:
+        print(f'the missing number is : ', idx)
+
 
 if __name__ == '__main__':
 
   Obj = array()
-
+  
   Obj.searchTarget()
+  Obj.missingNumber()
   Obj.largestElement()
   Obj.smallestElement()
   Obj.largestElementAlgo()
