@@ -49,7 +49,8 @@ class array:
       if idx not in array_:
         print(f'the missing number is : ', idx)
 
-  def repeatingNumber(self):
+  # using dictionary repeating_____
+  def repeatingNumberDict(self):
 
     array = self.array
     dictionary = {}
@@ -63,6 +64,7 @@ class array:
         duplicates.append(values)
     
     print(f'the duplicates elements are ', duplicates)
+  # using list  repeating_____
 
 if __name__ == '__main__':
 
@@ -70,7 +72,7 @@ if __name__ == '__main__':
   
   Obj.searchTarget()
   Obj.missingNumber()
-  Obj.repeatingNumber()
+  Obj.repeatingNumberDict()
   Obj.largestElement()
   Obj.smallestElement()
   Obj.largestElementAlgo()
