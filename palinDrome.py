@@ -17,3 +17,16 @@ if is_palindrome(num):
 else:
     print(f"{num} is not a palindrome.")
 # chatgpt
+
+# using slicing method.
+
+number = input('enter your number:\t')
+
+reversed_number = number[::-1]
+if reversed_number == number:
+  print('palindrome')
+else:
+  print('not')
+
+
+
