@@ -56,11 +56,28 @@ class ArrayTwoPointer:
            
 # note it is essential the array should be sorted before going into it.
 
+
+  def threeSumAlgo(self):
+
+    array = Array.array
+    x = Array.target
+    left = 0
+    rgyt = len(array) - 1
+
+    for idx in range(len(array)):
+      current_sum = array[idx] + array[left] + array[rgyt]
+
+      if current_sum == x:
+        print('print')
+          
+
 Obj = ArrayTwoPointer()
 
 # Obj.twoSumDict()
 Obj.twoSumTwoLoop()
 Obj.twoSumAlgo()
+Obj.threeSumAlgo()
+
 
     
     
