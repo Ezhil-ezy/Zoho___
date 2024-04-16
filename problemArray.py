@@ -1,4 +1,4 @@
-class array:
+class Array:
 
   array = [26, 22, 13, 25, 29, 5, 6, 1, 17, 9, 11, 23, 16 , 15, 11, 9, 4, 26, 6, 5, 9, 21]
   missing_number_array = [1, 5, 3, 7, 6, 2, 8, 7]
@@ -109,7 +109,7 @@ class array:
 #---------------------------------------------------------------------->
 if __name__ == '__main__':
 
-  Obj = array()
+  Obj = Array()
 
   Obj.arrayCheck()
   Obj.rotateArrayPop()
@@ -122,12 +122,3 @@ if __name__ == '__main__':
   Obj.smallestElement()
   Obj.largestElementAlgo()
   Obj.smallestElementAlgo()
-
-
-
-
-
-
-
-
-  
