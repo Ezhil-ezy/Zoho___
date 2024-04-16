@@ -42,8 +42,6 @@ class ArrayTwoPointer:
       else: 
         print('-1')
 
-    print('terminated')
-
   def twoSumTwoLoop(self):
 
     array = Array.array
@@ -69,7 +67,22 @@ class ArrayTwoPointer:
 
       if current_sum == x:
         print('print')
-          
+
+  def fourSumAlgo(self):
+
+    array = Array.array
+    x = Array.target
+    left = 0
+    rgyt = len(array) - 1
+
+    for idx in range(len(array)):
+      for jdx in range(len(array)):
+        current_sum = array[idx] + array[jdx] + array[left] + array[rgyt]
+
+      if current_sum == x:
+        print('print', x)
+
+    print(array)     
 
 Obj = ArrayTwoPointer()
 
@@ -77,6 +90,7 @@ Obj = ArrayTwoPointer()
 Obj.twoSumTwoLoop()
 Obj.twoSumAlgo()
 Obj.threeSumAlgo()
+Obj.fourSumAlgo()
 
 
     
