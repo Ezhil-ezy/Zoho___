@@ -82,7 +82,33 @@ class ArrayTwoPointer:
       if current_sum == x:
         print('print', x)
 
-    print(array)     
+    print(array)    
+
+  def tripletSum(self):
+
+    array = Array.array
+    n = len(array)
+
+    for idx in range(n - 2):
+      l, r = idx + 1, n - 1
+      array.sort()
+      while l < r:
+        current_sum = array[idx] + array[l] + array[r]
+
+        if current_sum == 0:
+          print(array[idx], array[l], array[r])
+          while array[l] == array[l + 1] and l < r:
+            l += 1
+          while array[r] == array[r- 1] and l < r:
+            r -= 1
+          l += 1
+          r -= 1
+        elif current_sum < 0: 
+          l += 1
+        else:
+          r -= 1
+
+      
 
 Obj = ArrayTwoPointer()
 
@@ -91,6 +117,8 @@ Obj.twoSumTwoLoop()
 Obj.twoSumAlgo()
 Obj.threeSumAlgo()
 Obj.fourSumAlgo()
+Obj.tripletSum()
+
 
 
     
