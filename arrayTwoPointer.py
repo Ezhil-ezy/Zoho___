@@ -5,11 +5,11 @@ from problemArray import *
 
 class ArrayTwoPointer:
 
+  array = Array.array
   def twoSumDict(self):
   
-    array = Array.array
+    global array
     x = Array.target
-
 
     dictionary = {}
     for idx in array:
@@ -43,12 +43,23 @@ class ArrayTwoPointer:
         print('-1')
 
     print('terminated')
+
+  def twoSumTwoLoop(self):
+
+    array = Array.array
+    x = Array.target
+    for idx, first in enumerate(array):
+      for jdx, secnd in enumerate(array):
+        if first + secnd == x:
+          print(first, end = ' ')
+    else: print('two sum not found')
            
 # note it is essential the array should be sorted before going into it.
 
 Obj = ArrayTwoPointer()
 
 # Obj.twoSumDict()
+Obj.twoSumTwoLoop()
 Obj.twoSumAlgo()
 
     
