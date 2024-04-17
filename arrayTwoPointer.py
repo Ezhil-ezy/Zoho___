@@ -108,16 +108,17 @@ class ArrayTwoPointer:
         else:
           r -= 1
 
-      
 
-Obj = ArrayTwoPointer()
+if __name__ == '__main__':
 
-# Obj.twoSumDict()
-Obj.twoSumTwoLoop()
-Obj.twoSumAlgo()
-Obj.threeSumAlgo()
-Obj.fourSumAlgo()
-Obj.tripletSum()
+  Obj = ArrayTwoPointer()
+
+  # Obj.twoSumDict()
+  Obj.twoSumTwoLoop()
+  Obj.twoSumAlgo()
+  Obj.threeSumAlgo()
+  Obj.fourSumAlgo()
+  Obj.tripletSum()
 
 
 
