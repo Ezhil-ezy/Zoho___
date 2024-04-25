@@ -13,6 +13,19 @@ class mustSolve:
         print(f'the majority element in an array is {dictionary[idx]}')
       
     return True
+  
+  def kandaneAlgo(self, array):
+    cur_sum = array[0]
+    for  value in range(1, len(array)):
+      cur_sum = array[value]
+      max_sum = 0
+
+      if cur_sum > max_sum:
+        max_sum = cur_sum
+      cur_sum += array[value]
+    
+    return max_sum, cur_sum
+
     
 def main():
 
@@ -22,8 +35,10 @@ def main():
     length = int(input('length of an array :\t'))
     print('Enter your array elements :')
     array  = [int(idx) for idx in input().strip().split()]
-    object = mustSolve()
-    print(object.majorityElement(array, length))
+    object_a = mustSolve()
+    
+    print(object_a.majorityElement(array, length))
+    print(object_a.kandaneAlgo(array))
 
     t -= 1
 
