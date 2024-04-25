@@ -53,13 +53,8 @@ class arrayManipulation:
       if current_sum not in dictionary:
         dictionary[current_sum] = idx
     
-    print(maximum_sum)
-
-
+    print(maximum_sum)  
     
-    
-
-
 
 
 if __name__ == '__main__':
