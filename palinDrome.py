@@ -1,3 +1,4 @@
+'''
 def is_palindrome(num):
     # Store the original number
     original_num = num
@@ -28,5 +29,13 @@ if reversed_number == number:
 else:
   print('not')
 
+'''
 
+#  palindrome algorithm for a string:
 
+def strPalindrome(string):
+    # easy method by slicing.
+    return string == string[::-1]
+obj = strPalindrome('palindrome')
+new = strPalindrome('malayalam')
+print(obj, new)
