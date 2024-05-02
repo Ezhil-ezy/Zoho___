@@ -38,4 +38,21 @@ def strPalindrome(string):
     return string == string[::-1]
 obj = strPalindrome('palindrome')
 new = strPalindrome('malayalam')
-print(obj, new)
+# print(obj, new)
+
+
+# by using indexing method.
+def strPalindrome(string):
+    
+    mid = len(string) // 2 
+    if len(string) % 2 != 0:
+        # print('even')
+        print(string[:mid + 1], string[mid :][::-1])
+        return string[:mid + 1] == string[mid :][::-1]
+    else:
+        # print('odd')
+        print(string[:mid], string[mid:][::-1])
+        return string[:mid] == string[mid:][::-1]
+
+print(strPalindrome('malayalam'))
+print(strPalindrome('boob'))
